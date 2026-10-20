@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, MessageCircle, Lock, Compass, Check, FileCheck2, Scan } from 'lucide-react';
+import { ArrowLeft, MessageCircle, Lock } from 'lucide-react';
 import { INITIAL_PROPERTIES, BROKER_INFO } from '../data/mockData';
 
 export default function PropertyLandingPage() {
   const { slug } = useParams<{ slug: string }>();
-  const [activeBlueprint, setActiveBlueprint] = useState(0);
 
   const property = INITIAL_PROPERTIES.find(p => p.slug === slug) || INITIAL_PROPERTIES[0];
 

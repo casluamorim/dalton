@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, MessageSquare, ArrowUpRight, ShieldCheck, CheckCircle2, ChevronRight, Award, Compass, FileCheck } from 'lucide-react';
+import { Search, MessageSquare, ArrowUpRight } from 'lucide-react';
 import { BROKER_INFO, INITIAL_PROPERTIES } from '../data/mockData';
 import { Property } from '../types';
 
@@ -37,7 +37,6 @@ export default function HomePage() {
 
           <nav className="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest text-platinum/70">
             <a href="#sobre" className="hover:text-champagne transition-colors">Tradição & Método</a>
-            <a href="#solucoes" className="hover:text-champagne transition-colors">Personalizadas</a>
             <a href="#colecao" className="hover:text-champagne transition-colors">Acervo de Imóveis</a>
             <Link to="/admin" className="text-champagne border border-champagne/40 px-3 py-1.5 rounded hover:bg-champagne hover:text-obsidian transition-all">
               Painel Corretor
@@ -56,7 +55,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* HERO COM INSPIRAÇÃO DIRETA DO SITE DALTONBUTKE.COM.BR */}
+      {/* HERO SECTION */}
       <section className="relative min-h-[92vh] flex flex-col justify-center items-center pt-28 pb-16 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
           <div className="lg:col-span-7">
@@ -161,7 +160,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SEÇÃO TRADIÇÃO E INOVAÇÃO NA MESMA PLANTA */}
+      {/* SEÇÃO TRADIÇÃO E INOVAÇÃO */}
       <section id="sobre" className="py-24 bg-onyx border-y border-white/5 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6">
@@ -190,7 +189,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CATÁLOGO DE IMÓVEIS (COM SLUGS DEDICADOS) */}
+      {/* CATÁLOGO DE IMÓVEIS */}
       <section id="colecao" className="max-w-7xl mx-auto px-6 py-24 w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>

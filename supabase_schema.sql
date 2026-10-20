@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS properties (
   slug TEXT UNIQUE NOT NULL,
   title TEXT NOT NULL,
   tagline TEXT NOT NULL,
-  category TEXT NOT NULL, -- Mansão, Penthouse, Casa em Condomínio, Terreno
+  category TEXT NOT NULL,
   city TEXT NOT NULL,
   neighborhood TEXT NOT NULL,
   price NUMERIC NOT NULL,
